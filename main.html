@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>1000 Размеров</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.maskedinput.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/chosen/chosen.jquery.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.js"></script>
+        <script src="js/fancybox/jquery.fancybox.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <header>
+                <!-- top -->
+                <div class="top">
+                    <div class="container">
+                        <a href="#" class="menu-mobile-link"></a>
+
+                        <!-- menu mobile -->
+                        <div class="menu-mobile">
+                            <div class="container">
+                                <div class="menu-mobile-header">
+                                    <a href="#" class="menu-mobile-close"></a>
+                                    <div class="menu-mobile-phones">
+                                        <div class="menu-mobile-phone">
+                                            <div class="menu-mobile-phone-number"><a href="tel:+74232025252">+7 (423) 202-52-52</a></div>
+                                            <div class="menu-mobile-phone-text">для звонков во Владивостоке</div>
+                                        </div>
+                                        <div class="menu-mobile-phone">
+                                            <div class="menu-mobile-phone-number"><a href="tel:+78005004280">8 800 500-42-80</a></div>
+                                            <div class="menu-mobile-phone-text">для звонков по РФ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-mobile-all"><span class="menu-mobile-all-icon"></span> Все товары и услуги</div>
+                                <div class="menu-mobile-item">
+                                    <a href="#" class="menu-mobile-item-link">Шины<span class="menu-mobile-item-link-arrow"></span></a>
+                                    <div class="menu-mobile-sub">
+                                        <ul>
+                                            <li><a href="#">Зимние</a></li>
+                                            <li><a href="#">Летние</a></li>
+                                            <li><a href="#">Грузовые</a></li>
+                                            <li><a href="#">Спецшины</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Мотошины</a></li>
+                                            <li><a href="#">Новые шины по брендам</a></li>
+                                            <li><a href="#">Б/у шины</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-mobile-item">
+                                    <a href="#" class="menu-mobile-item-link">Диски</a>
+                                </div>
+                                <div class="menu-mobile-item">
+                                    <a href="#" class="menu-mobile-item-link">Мотошины<span class="menu-mobile-item-link-arrow"></span></a>
+                                    <div class="menu-mobile-sub">
+                                        <ul>
+                                            <li><a href="#">Дорожные и спортивные</a></li>
+                                            <li><a href="#">Внедорожные (off road)</a></li>
+                                            <li><a href="#">Скутера</a></li>
+                                            <li><a href="#">ATV</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-mobile-item">
+                                    <a href="#" class="menu-mobile-item-link">Автотовары</a>
+                                </div>
+                                <div class="menu-mobile-item">
+                                    <a href="#" class="menu-mobile-item-link">Товары для отдыха</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- menu mobile END -->
+
+                        <div class="top-menu">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Покупателям</a></li>
+                                <li><a href="#">Информация</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-search">
+                            <form action="#" method="post">
+                                <div class="top-search-input"><input type="text" name="search" value="" placeholder="Быстрый поиск по сайту..." class="required" /></div>
+                                <div class="top-search-submit"><input type="submit" value="" /></div>
+                            </form>
+                        </div>
+                        <div class="top-login"><a href="#auth" class="window-link-self">Вход</a></div>
+
+                        <!-- auth -->
+                        <div id="auth" style="display:none">
+                            <div class="window-auth">
+                                <div class="window-auth-title">Вход на сайт</div>
+                                <form action="#" method="post">
+                                    <div class="window-auth-row">
+                                        <div class="window-auth-field">
+                                            <div class="form-label">E-mail</div>
+                                            <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
+                                        </div>
+                                        <div class="window-auth-field">
+                                            <div class="form-label">Пароль</div>
+                                            <div class="form-input"><input type="password" name="password" value="" class="required" /></div>
+                                            <div class="window-auth-forgot"><a href="#">Забыли пароль?</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-submit"><input type="submit" value="Войти" /></div>
+                                </form>
+                                <div class="window-auth-social">
+                                    <div class="window-auth-social-title"><span class="window-auth-social-title-inner">или</span></div>
+                                    <div class="window-auth-social-text">Вход, с помощью соц. сетей:</div>
+                                    <div class="window-auth-social-links">
+                                        <div class="window-auth-social-link"><a href="#"><img src="images/auth-vk.png" alt="" /></a></div>
+                                        <div class="window-auth-social-link"><a href="#"><img src="images/auth-fb.png" alt="" /></a></div>
+                                    </div>
+                                </div>
+                                <div class="window-auth-reg">
+                                    <div class="window-auth-reg-title">Еще не зарегистрированы?</div>
+                                    <div class="window-auth-reg-link"><a href="#reg" class="window-link-self">Зарегистрироваться</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- auth END -->
+
+                        <!-- reg END -->
+                        <div id="reg" style="display:none">
+                            <div class="window-reg">
+                                <div class="window-reg-title">Регистрация на&nbsp;сайте</div>
+
+
+                                <form method="post" action="/" name="regform" enctype="multipart/form-data">
+
+                                    <input type="hidden" name="REGISTER[LOGIN]" value="netsmart31337" />
+
+                                    <div class="window-reg-row">
+                                        <div class="window-reg-field">
+                                            <div class="form-label">Имя</div>
+                                            <div class="form-input"><input type="text" name="REGISTER[NAME]" value="" class="required" /></div>
+                                        </div>
+                                        <div class="window-reg-field">
+                                            <div class="form-label">E-mail</div>
+                                            <div class="form-input"><input type="text" name="REGISTER[EMAIL]" value="" class="required email" /></div>
+                                        </div>
+                                        <div class="window-reg-field">
+                                            <div class="form-label">Телефон</div>
+                                            <div class="form-input"><input type="text" name="REGISTER[PERSOANL_PHONE]" value="" class="required maskPhone" placeholder="+7 (___) ___-__-__" /></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="window-reg-row">
+                                        <div class="window-reg-field">
+                                            <div class="form-label">Пароль</div>
+                                            <div class="form-input"><input type="password" name="REGISTER[PASSWORD]" value="" class="required" id="password" /></div>
+                                        </div>
+                                        <div class="window-reg-field">
+                                            <div class="form-label">Подтвердите пароль</div>
+                                            <div class="form-input"><input type="password" name="REGISTER[CONFIRM_PASSWORD]" value="" class="required" equalTo="#password" /></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-submit"><input type="submit" name="register_submit_button" value="Зарегистрироваться" /></div>
+                                </form>
+                                <div class="window-reg-auth">
+                                    <div class="window-reg-auth-title">Уже зарегистрированы?</div>
+                                    <div class="window-reg-auth-link"><a href="#auth" class="window-link-self">Войти на сайт</a></div>
+                                </div>
+                                <div class="window-reg-policy">Нажимая кнопку «Зарегистрироваться», вы даете согласие на обработку ваших персональных данных компанией «1000 размеров». C политикой конфиденциальности можно ознакомиться <a href="#">здесь</a></div>
+                            </div>
+                        </div>
+                        <!-- reg END -->
+
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <!-- header content -->
+                <div class="header-content">
+                    <div class="container">
+                        <div class="logo"></div>
+                        <div class="title">Шины<br /><span class="title-sign">,</span> Диски<br /><span class="title-sign">,</span> Услуги<br /><span class="title-sign">,</span> Сервис</div>
+
+                        <div class="header-contacts">
+                            <div class="header-contacts-phone">
+                                <div class="header-contacts-phone-number"><a href="tel:+74232025252">+7 (423) 202-52-52</a></div>
+                                <div class="header-contacts-phone-text">для звонков во Владивостоке</div>
+                            </div>
+                            <div class="header-contacts-phone">
+                                <div class="header-contacts-phone-number"><a href="tel:+78005004280">8 800 500-42-80</a></div>
+                                <div class="header-contacts-phone-text">для звонков по РФ</div>
+                            </div>
+                            <div class="header-callback"><a href="#">Заказать звонок</a></div>
+                            <div class="header-social">
+                                <a href="#" class="header-social-whatsapp"></a>
+                                <a href="#" class="header-social-telegram"></a>
+                                <a href="#" class="header-social-vk"></a>
+                                <a href="#" class="header-social-fb"></a>
+                                <a href="#" class="header-social-ig"></a>
+                                <a href="#" class="header-social-viber"></a>
+                            </div>
+                            <div class="header-email"><a href="mailto:manager@1000size.ru">manager@1000size.ru</a></div>
+                        </div>
+
+                        <div class="header-cart">
+                            <a href="#">
+                                <div class="header-cart-inner">
+                                    <div class="header-cart-title">Корзина:</div>
+                                    <div class="header-cart-text">пока пуста</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- header content END -->
+
+                <!-- header nav -->
+                <div class="header-nav">
+                    <div class="container">
+                        <!-- header nav all -->
+                        <div class="header-nav-all">
+                            <a href="#" class="header-nav-all-link"><span class="header-nav-all-icon"></span>все товары и услуги</a>
+                            <div class="header-nav-all-bg"></div>
+                            <div class="header-nav-all-content">
+                                <div class="header-nav-all-menu">
+                                    <div class="header-nav-all-menu-col">
+                                        <div class="header-nav-all-menu-subcol">
+                                            <div class="header-nav-all-menu-title"><a href="#">Шины</a></div>
+                                            <ul>
+                                                <li><a href="#">Зимние</a></li>
+                                                <li><a href="#">Летние</a></li>
+                                                <li><a href="#">Шипованные</a></li>
+                                                <li><a href="#">Грязевые АТ</a></li>
+                                                <li><a href="#">Грязевые МТ</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-nav-all-menu-subcol">
+                                            <div class="header-nav-all-menu-title"><a href="#">Диски</a></div>
+                                            <ul>
+                                                <li><a href="#">Литые</a></li>
+                                                <li><a href="#">Кованные</a></li>
+                                                <li><a href="#">Железные</a></li>
+                                                <li><a href="#">BEAD LOCK (Off Road 4X4)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-nav-all-menu-subcol">
+                                            <div class="header-nav-all-menu-title"><a href="#">Мотошины</a></div>
+                                            <ul>
+                                                <li><a href="#">Дорожные и спортивные</a></li>
+                                                <li><a href="#">Внедорожные (off road)</a></li>
+                                                <li><a href="#">Скутера</a></li>
+                                                <li><a href="#">ATV</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-nav-all-menu-subcol">
+                                            <div class="header-nav-all-menu-title"><a href="#">Автосервис</a></div>
+                                            <ul>
+                                                <li><a href="#">Регулировка сход развал</a></li>
+                                                <li><a href="#">Замена масел и тех. жидкостей</a></li>
+                                                <li><a href="#">Диагностика авто</a></li>
+                                                <li><a href="#">Ремонт подвески</a></li>
+                                                <li><a href="#">Проточка тормозных дисков</a></li>
+                                                <li><a href="#">Замена узлов и агрегатов</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="header-nav-all-menu-col">
+                                        <div class="header-nav-all-menu-title"><a href="#">Товары для отдыха</a></div>
+                                        <div class="header-nav-all-menu-subcol">
+                                            <ul>
+                                                <li><a href="#">MASTER – серия</a></li>
+                                                <li><a href="#">Освещение, фонари</a></li>
+                                                <li><a href="#">RV-BOX</a></li>
+                                                <li><a href="#">ATAKC-BOX</a></li>
+                                                <li><a href="#">Печи, обогреватели, мангалы</a></li>
+                                                <li><a href="#">Палатки и тенты</a></li>
+                                                <li><a href="#">Спальники и матрасы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-nav-all-menu-subcol">
+                                            <ul>
+                                                <li><a href="#">Мебель</a></li>
+                                                <li><a href="#">Отдых на открытом воздухе</a></li>
+                                                <li><a href="#">Изотермика</a></li>
+                                                <li><a href="#">Шланги</a></li>
+                                                <li><a href="#">Водный отдых</a></li>
+                                                <li><a href="#">Одежда Милитари</a></li>
+                                                <li><a href="#">Следопыт – серия</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-nav-all-menu-title"><a href="#">Автотовары</a></div>
+                                        <div class="header-nav-all-menu-subcol">
+                                            <ul>
+                                                <li><a href="#">Аксессуары</a></li>
+                                                <li><a href="#">Автопринадлежности</a></li>
+                                                <li><a href="#">Автоэлектроника</a></li>
+                                                <li><a href="#">Аккумуляторы и сопутствующее</a></li>
+                                                <li><a href="#">Масла и смазки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-nav-all-menu-subcol">
+                                            <ul>
+                                                <li><a href="#">Расходные жидкости</a></li>
+                                                <li><a href="#">Автохимия</a></li>
+                                                <li><a href="#">Автокосметика</a></li>
+                                                <li><a href="#">Автозапчасти</a></li>
+                                                <li><a href="#">Всё для ремонта</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-nav-all-services">
+                                    <div class="header-nav-all-services-title">Услуги</div>
+                                    <div class="header-nav-all-services-list">
+                                        <ul>
+                                            <li><a href="#">Шиномонтаж</a></li>
+                                            <li><a href="#">Хранение шин</a></li>
+                                            <li><a href="#">Ремонт дисков</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- header nav all END -->
+
+                        <!-- header menu -->
+                        <div class="header-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Шины<span class="header-nav-arrow"></span></a>
+                                    <div class="header-submenu">
+                                        <ul>
+                                            <li><a href="#">Зимние</a></li>
+                                            <li><a href="#">Летние</a></li>
+                                            <li><a href="#">Грузовые</a></li>
+                                            <li><a href="#">Спецшины</a></li>
+                                            <li><a href="#">Мотошины</a></li>
+                                            <li><a href="#">Новые шины по брендам</a></li>
+                                            <li><a href="#">Б/у шины</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Регулировка сход развал</a></li>
+                                            <li><a href="#">Замена масел и тех. жидкостей</a></li>
+                                            <li><a href="#">Диагностика авто</a></li>
+                                            <li><a href="#">Ремонт подвески</a></li>
+                                            <li><a href="#">Проточка тормозных дисков</a></li>
+                                            <li><a href="#">Замена узлов и агрегатов</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Диски<span class="header-nav-arrow"></span></a>
+                                    <div class="header-submenu">
+                                        <ul>
+                                            <li><a href="#">Литые</a></li>
+                                            <li><a href="#">Кованные</a></li>
+                                            <li><a href="#">Железные</a></li>
+                                            <li><a href="#">BEAD LOCK (Off Road 4X4)</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Мотошины</a>
+                                </li>
+                                <li>
+                                    <a href="#">Автотовары</a>
+                                </li>
+                                <li>
+                                    <a href="#">Товары для отдыха</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- header menu END -->
+                    </div>
+                </div>
+                <!-- header nav END -->
+
+                <!-- header sections -->
+                <div class="header-sections">
+                    <div class="container">
+                        <a href="#" class="header-sections-item">
+                            <div class="header-sections-icon"><img src="images/header-section-1.png" alt="" /><img src="images/header-section-1-hover.png" alt="" /></div>
+                            <div class="header-sections-title">Шиномонтаж</div>
+                        </a>
+                        <a href="#" class="header-sections-item">
+                            <div class="header-sections-icon"><img src="images/header-section-2.png" alt="" /><img src="images/header-section-2-hover.png" alt="" /></div>
+                            <div class="header-sections-title">Хранение шин</div>
+                        </a>
+                        <a href="#" class="header-sections-item">
+                            <div class="header-sections-icon"><img src="images/header-section-3.png" alt="" /><img src="images/header-section-3-hover.png" alt="" /></div>
+                            <div class="header-sections-title">Ремонт дисков</div>
+                        </a>
+                        <a href="#" class="header-sections-item">
+                            <div class="header-sections-icon"><img src="images/header-section-4.png" alt="" /><img src="images/header-section-4-hover.png" alt="" /></div>
+                            <div class="header-sections-title">Автосервис</div>
+                        </a>
+                        <a href="#" class="header-sections-item">
+                            <div class="header-sections-icon"><img src="images/header-section-5.png" alt="" /><img src="images/header-section-5-hover.png" alt="" /></div>
+                            <div class="header-sections-title">Точки продаж</div>
+                        </a>
+                        <a href="#" class="header-sections-item">
+                            <div class="header-sections-icon"><img src="images/header-section-6.png" alt="" /><img src="images/header-section-6-hover.png" alt="" /></div>
+                            <div class="header-sections-title">Доставка</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- header sections END -->
+            </header>
+
+            <!-- main top -->
+            <div class="main-top">
+                <!-- container -->
+                <div class="container">
+
+                    <!-- main filters -->
+                    <div class="main-filters">
+
+                        <!-- main filter -->
+                        <div class="main-filter">
+                            <div class="main-filter-inner">
+                                <div class="main-filter-title">Подбор шин</div>
+                                <div class="main-filter-menu">
+                                    <ul>
+                                        <li class="active"><a href="#">По размерам</a></li>
+                                        <li><a href="#">По модели авто</a></li>
+                                    </ul>
+                                </div>
+                                <!-- main filter tabs -->
+                                <div class="main-filter-tabs">
+
+                                    <!-- main filter tab -->
+                                    <div class="main-filter-tab active">
+                                        <form action="#" method="post">
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Ширина</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="width">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="135">135</option>
+                                                            <option value="145">145</option>
+                                                            <option value="155">155</option>
+                                                            <option value="165">165</option>
+                                                            <option value="175">175</option>
+                                                            <option value="185">185</option>
+                                                            <option value="195">195</option>
+                                                            <option value="205">205</option>
+                                                            <option value="215">215</option>
+                                                            <option value="225">225</option>
+                                                            <option value="235">235</option>
+                                                            <option value="245">245</option>
+                                                            <option value="255">255</option>
+                                                            <option value="265">265</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Высота</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="height">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="25">25</option>
+                                                            <option value="30">30</option>
+                                                            <option value="35">35</option>
+                                                            <option value="40">40</option>
+                                                            <option value="45">45</option>
+                                                            <option value="50">50</option>
+                                                            <option value="55">55</option>
+                                                            <option value="60">60</option>
+                                                            <option value="65">65</option>
+                                                            <option value="70">70</option>
+                                                            <option value="75">75</option>
+                                                            <option value="80">80</option>
+                                                            <option value="85">85</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Диаметр</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="diameter">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Производитель</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="vendor">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="BARUM">BARUM</option>
+                                                            <option value="BRIDGESTONE">BRIDGESTONE</option>
+                                                            <option value="CONTINENTAL">CONTINENTAL</option>
+                                                            <option value="COOPER">COOPER</option>
+                                                            <option value="GISLAVED">GISLAVED</option>
+                                                            <option value="KUMHO">KUMHO</option>
+                                                            <option value="PIRELLI">PIRELLI</option>
+                                                            <option value="TOYO">TOYO</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Сезонность</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="season">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="1">Летняя</option>
+                                                            <option value="2">Зимняя</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-submit"><button type="submit">Подобрать шины</button></div>
+                                        </form>
+                                    </div>
+                                    <!-- main filter tab END -->
+
+                                    <!-- main filter tab -->
+                                    <div class="main-filter-tab">
+                                        <form action="#" method="post">
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Марка</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="vendor">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="135">Audi</option>
+                                                            <option value="145">BMW</option>
+                                                            <option value="155">Skoda</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Модель</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="model">
+                                                            <option value="-">- любая -</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Год выпуска</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="year">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="2017">2017</option>
+                                                            <option value="2016">2016</option>
+                                                            <option value="2015">2015</option>
+                                                            <option value="2014">2014</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Комплектация</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="complectation">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="1">Standart</option>
+                                                            <option value="2">Lux</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Сезонность</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="season">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="1">Летняя</option>
+                                                            <option value="2">Зимняя</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-submit"><button type="submit">Подобрать шины</button></div>
+                                        </form>
+                                    </div>
+                                    <!-- main filter tab END -->
+
+                                </div>
+                                <!-- main filter tabs END -->
+                            </div>
+                        </div>
+                        <!-- main filter END -->
+
+                        <!-- main filter -->
+                        <div class="main-filter">
+                            <div class="main-filter-inner">
+                                <div class="main-filter-title">Подбор дисков</div>
+                                <div class="main-filter-menu">
+                                    <ul>
+                                        <li class="active"><a href="#">По параметрам</a></li>
+                                        <li><a href="#">По модели авто</a></li>
+                                    </ul>
+                                </div>
+                                <!-- main filter tabs -->
+                                <div class="main-filter-tabs">
+
+                                    <!-- main filter tab -->
+                                    <div class="main-filter-tab active">
+                                        <form action="#" method="post">
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Диаметр</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="diameter">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Сверловка</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="width">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="135">135</option>
+                                                            <option value="145">145</option>
+                                                            <option value="155">155</option>
+                                                            <option value="165">165</option>
+                                                            <option value="175">175</option>
+                                                            <option value="185">185</option>
+                                                            <option value="195">195</option>
+                                                            <option value="205">205</option>
+                                                            <option value="215">215</option>
+                                                            <option value="225">225</option>
+                                                            <option value="235">235</option>
+                                                            <option value="245">245</option>
+                                                            <option value="255">255</option>
+                                                            <option value="265">265</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Вылет, мм</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="height">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="25">25</option>
+                                                            <option value="30">30</option>
+                                                            <option value="35">35</option>
+                                                            <option value="40">40</option>
+                                                            <option value="45">45</option>
+                                                            <option value="50">50</option>
+                                                            <option value="55">55</option>
+                                                            <option value="60">60</option>
+                                                            <option value="65">65</option>
+                                                            <option value="70">70</option>
+                                                            <option value="75">75</option>
+                                                            <option value="80">80</option>
+                                                            <option value="85">85</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Тип</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="season">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="1">Летняя</option>
+                                                            <option value="2">Зимняя</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Производитель</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="vendor">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="BARUM">BARUM</option>
+                                                            <option value="BRIDGESTONE">BRIDGESTONE</option>
+                                                            <option value="CONTINENTAL">CONTINENTAL</option>
+                                                            <option value="COOPER">COOPER</option>
+                                                            <option value="GISLAVED">GISLAVED</option>
+                                                            <option value="KUMHO">KUMHO</option>
+                                                            <option value="PIRELLI">PIRELLI</option>
+                                                            <option value="TOYO">TOYO</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-submit"><button type="submit">Подобрать диски</button></div>
+                                        </form>
+                                    </div>
+                                    <!-- main filter tab END -->
+
+                                    <!-- main filter tab -->
+                                    <div class="main-filter-tab">
+                                        <form action="#" method="post">
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Марка</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="vendor">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="135">Audi</option>
+                                                            <option value="145">BMW</option>
+                                                            <option value="155">Skoda</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Модель</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="model">
+                                                            <option value="-">- любая -</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Год выпуска</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="year">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="2017">2017</option>
+                                                            <option value="2016">2016</option>
+                                                            <option value="2015">2015</option>
+                                                            <option value="2014">2014</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Комплектация</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="complectation">
+                                                            <option value="-">- любая -</option>
+                                                            <option value="1">Standart</option>
+                                                            <option value="2">Lux</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-row">
+                                                <div class="main-filter-label">Производитель</div>
+                                                <div class="main-filter-field">
+                                                    <div class="form-select">
+                                                        <select name="vendor">
+                                                            <option value="-">- любой -</option>
+                                                            <option value="BARUM">BARUM</option>
+                                                            <option value="BRIDGESTONE">BRIDGESTONE</option>
+                                                            <option value="CONTINENTAL">CONTINENTAL</option>
+                                                            <option value="COOPER">COOPER</option>
+                                                            <option value="GISLAVED">GISLAVED</option>
+                                                            <option value="KUMHO">KUMHO</option>
+                                                            <option value="PIRELLI">PIRELLI</option>
+                                                            <option value="TOYO">TOYO</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="main-filter-submit"><button type="submit">Подобрать диски</button></div>
+                                        </form>
+                                    </div>
+                                    <!-- main filter tab END -->
+
+                                </div>
+                                <!-- main filter tabs END -->
+                            </div>
+                        </div>
+                        <!-- main filter END -->
+
+                    </div>
+                    <!-- main filters END -->
+
+                    <!-- side -->
+                    <div class="side">
+
+                        <!-- side sections -->
+                        <div class="side-sections">
+                            <a href="#" class="side-section side-section-1">
+                                <div class="side-section-title">Акции</div>
+                            </a>
+                            <a href="#" class="side-section side-section-2">
+                                <div class="side-section-title">Горячие<br /> предложения</div>
+                            </a>
+                            <a href="#" class="side-section side-section-3">
+                                <div class="side-section-title">Мото-<br /> техника</div>
+                            </a>
+                            <a href="#" class="side-section side-section-4">
+                                <div class="side-section-title">Товары<br /> для отдыха</div>
+                            </a>
+                        </div>
+                        <!-- side sections END -->
+
+                    </div>
+                    <!-- side END -->
+
+                    <!-- slider 1 -->
+                    <div class="slider-1">
+                        <div class="slider-1-list">
+                            <div class="slider-1-item" style="background-image:url(files/slider-1.jpg)">
+                                <div class="slider-1-item-inner">
+                                    <div class="slider-1-item-content">
+                                        <div class="slider-1-item-logo"><img src="files/slider-1-logo.png" alt="" /></div>
+                                        <div class="slider-1-item-text">
+                                            <div class="slider-1-item-text-inner">Двойная ошиповка, остановит вовремя. Расширенная гарантия!</div>
+                                        </div>
+                                        <a href="#" class="slider-1-item-btn">узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1-item" style="background-image:url(files/slider-1.jpg)">
+                                <div class="slider-1-item-inner">
+                                    <div class="slider-1-item-content">
+                                        <div class="slider-1-item-logo"><img src="files/slider-1-logo.png" alt="" /></div>
+                                        <div class="slider-1-item-text">
+                                            <div class="slider-1-item-text-inner">Двойная ошиповка, остановит вовремя. Расширенная гарантия!</div>
+                                        </div>
+                                        <a href="#" class="slider-1-item-btn">узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1-item" style="background-image:url(files/slider-1.jpg)">
+                                <div class="slider-1-item-inner">
+                                    <div class="slider-1-item-content">
+                                        <div class="slider-1-item-logo"><img src="files/slider-1-logo.png" alt="" /></div>
+                                        <div class="slider-1-item-text">
+                                            <div class="slider-1-item-text-inner">Двойная ошиповка, остановит вовремя. Расширенная гарантия!</div>
+                                        </div>
+                                        <a href="#" class="slider-1-item-btn">узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1-item" style="background-image:url(files/slider-1.jpg)">
+                                <div class="slider-1-item-inner">
+                                    <div class="slider-1-item-content">
+                                        <div class="slider-1-item-logo"><img src="files/slider-1-logo.png" alt="" /></div>
+                                        <div class="slider-1-item-text">
+                                            <div class="slider-1-item-text-inner">Двойная ошиповка, остановит вовремя. Расширенная гарантия!</div>
+                                        </div>
+                                        <a href="#" class="slider-1-item-btn">узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1-item" style="background-image:url(files/slider-1.jpg)">
+                                <div class="slider-1-item-inner">
+                                    <div class="slider-1-item-content">
+                                        <div class="slider-1-item-logo"><img src="files/slider-1-logo.png" alt="" /></div>
+                                        <div class="slider-1-item-text">
+                                            <div class="slider-1-item-text-inner">Двойная ошиповка, остановит вовремя. Расширенная гарантия!</div>
+                                        </div>
+                                        <a href="#" class="slider-1-item-btn">узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider 1 END -->
+
+                </div>
+                <!-- container END -->
+            </div>
+            <!-- main top END -->
+
+            <!-- main pupular -->
+            <div class="main-popular">
+                <div class="container">
+
+                    <!-- main popular col -->
+                    <div class="main-popular-col">
+                        <div class="main-popular-col-inner">
+                            <div class="main-popular-scroll">
+                                <div class="main-popular-title">Популярные шины</div>
+                                <div class="main-popular-catalogue">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-01.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-left">
+                                                <div class="catalogue-item-icon-new"></div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-02.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-03.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-04.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-05.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-06.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-01.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-left">
+                                                <div class="catalogue-item-icon-new"></div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-02.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-03.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-04.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-05.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-06.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-right">
+                                                <div class="catalogue-item-icon-summer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main popular col END -->
+
+                    <!-- main popular col -->
+                    <div class="main-popular-col">
+                        <div class="main-popular-col-inner">
+                            <div class="main-popular-scroll">
+                                <div class="main-popular-title">Популярные диски</div>
+                                <div class="main-popular-catalogue">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-07.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-left">
+                                                <div class="catalogue-item-icon-hit"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-08.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-09.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-10.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-left">
+                                                <div class="catalogue-item-icon-hit"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-11.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-12.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-07.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-left">
+                                                <div class="catalogue-item-icon-hit"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-08.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-09.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-10.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+
+                                            <div class="catalogue-item-icons-left">
+                                                <div class="catalogue-item-icon-hit"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-11.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-12.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main popular col END -->
+
+                </div>
+            </div>
+            <!-- main pupular END -->
+
+            <!-- main other -->
+            <div class="main-other">
+                <div class="container">
+                    <!-- main other wrap -->
+                    <div class="main-other-wrap">
+                        <div class="main-other-title">Популярные товары</div>
+                        <div class="main-other-list">
+                            <div class="main-other-list-inner">
+
+                                <div class="main-other-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-05.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-06.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-other-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-09.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-10.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-other-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-05.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-06.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-other-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-09.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-10.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-other-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-05.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-06.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-other-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-09.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-10.png" alt="" /></a></div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new"><strong>2 767</strong> руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main other wrap END -->
+                    <div class="main-other-more"><a href="#">показать больше</a></div>
+                </div>
+            </div>
+            <!-- main other END -->
+
+            <!-- main hot -->
+            <div class="main-hot">
+                <div class="container">
+                    <!-- main other wrap -->
+                    <div class="main-hot-wrap">
+                        <video src="images/video.mp4" autoplay="autoplay" loop="loop"></video>
+                        <div class="main-hot-title">Горячие предложения</div>
+                        <div class="main-hot-list">
+                            <div class="main-hot-list-inner">
+
+                                <div class="main-hot-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-01.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-02.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Yokohama Geolandar H/T-S G051, 235/60/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">99 999 руб. за 4 шт.</div>
+                                                <div class="catalogue-item-price-old">99 999 руб. за 4 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-hot-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-06.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Nitto NT420S, 255/55/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-06.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Nitto NT420S, 255/55/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-hot-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-01.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-02.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Yokohama Geolandar H/T-S G051, 235/60/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">99 999 руб. за 4 шт.</div>
+                                                <div class="catalogue-item-price-old">99 999 руб. за 4 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-hot-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-06.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Nitto NT420S, 255/55/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-06.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Nitto NT420S, 255/55/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-hot-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-01.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Bridgestone Ecopia EP150 185/70/14, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-02.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Yokohama Geolandar H/T-S G051, 235/60/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">99 999 руб. за 4 шт.</div>
+                                                <div class="catalogue-item-price-old">99 999 руб. за 4 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                                <div class="main-hot-list-item">
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-06.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Nitto NT420S, 255/55/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+
+                                    <!-- catalogue item -->
+                                    <div class="catalogue-item">
+                                        <div class="catalogue-item-inner">
+                                            <div class="catalogue-item-preview">
+                                                <a href="#"><img src="files/catalogue-06.png" alt="" /></a>
+
+                                                <div class="catalogue-item-icons-right">
+                                                    <div class="catalogue-item-icon-winter"></div>
+                                                </div>
+                                            </div>
+                                            <div class="catalogue-item-title"><a href="#">Nitto NT420S, 255/55/18, летняя</a></div>
+                                            <div class="catalogue-item-price">
+                                                <div class="catalogue-item-price-new">2 767 руб. за 1 шт.</div>
+                                                <div class="catalogue-item-price-old">2 975 руб. за 1 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- catalogue item END -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main hot wrap END -->
+                    <div class="main-hot-more"><a href="#">показать больше</a></div>
+                </div>
+            </div>
+            <!-- main hot END -->
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- main contacts -->
+                <div class="main-contacts">
+                    <div class="main-contacts-inner">
+                        <div class="main-contacts-title">Наши и партнерские автоцентры</div>
+                        <div class="main-contacts-map" id="map"></div>
+                        <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+                        <script>
+                            ymaps.ready(init);
+
+                            var myMap;
+                            var coordsCenter = [43.089612, 131.904195];
+                            var coords = [
+                                            [43.167438, 131.938422],
+                                            [43.096737, 131.964698],
+                                            [43.127999, 131.918282],
+                                            [43.119129, 132.356202],
+                                            [43.097027, 131.900729],
+                                            [43.139894, 131.948223],
+                                            ];
+
+                            function init() {
+                                myMap = new ymaps.Map('map', {
+                                    center: coordsCenter,
+                                    zoom: 13,
+                                    controls: []
+                                });
+
+                                myMap.controls.add('zoomControl');
+                                myMap.behaviors.disable('scrollZoom');
+
+                                for (var i = 0; i < coords.length; i++) {
+                                    var myPlacemark = new ymaps.Placemark(coords[i], {}, {
+                                        iconLayout: 'default#image',
+                                        iconImageHref: 'images/map-icon.png',
+                                        iconImageSize: [53, 41],
+                                        iconImageOffset: [-14, -41]
+                                    });
+                                    myMap.geoObjects.add(myPlacemark);
+                                }
+
+                                myMap.setCenter(coordsCenter);
+                            }
+                        </script>
+                    </div>
+
+                    <div class="main-contacts-news">
+                        <!-- side news -->
+                        <div class="side-news">
+                            <div class="side-news-title">Новости</div>
+                            <div class="side-news-list">
+                                <div class="side-news-item">
+                                    <div class="side-news-item-title"><a href="#">Готовь сани летом, телегу - зимой</a></div>
+                                    <div class="side-news-item-date">24 дек 2017</div>
+                                </div>
+                                <div class="side-news-item">
+                                    <div class="side-news-item-title"><a href="#">Оплата картой ХАЛВА</a></div>
+                                    <div class="side-news-item-date">24 дек 2017</div>
+                                </div>
+                                <div class="side-news-item">
+                                    <div class="side-news-item-title"><a href="#">Большой ассортимент зимних шин</a></div>
+                                    <div class="side-news-item-date">24 дек 2017</div>
+                                </div>
+                            </div>
+                            <div class="side-news-all"><a href="#">Все новости</a></div>
+                        </div>
+                        <!-- side news END -->
+                    </div>
+                </div>
+                <!-- main contacts END -->
+
+                <!-- main partners -->
+                <div class="main-partners">
+
+                    <!-- main partner -->
+                    <div class="main-partner">
+                        <div class="main-partner-photo"><img src="files/main-partner-1.jpg" alt="" /></div>
+                        <div class="main-partner-address">г. Владивосток, ул. Русская, 92 а</div>
+                        <div class="main-partner-phone"><div class="main-partner-phone-inner">Магазин:<br /> <strong>8 (423) 202-52-52</strong></div></div>
+                        <div class="main-partner-time"><div class="main-partner-time-inner">пн-пт: <strong>с 9:00 до 19:00</strong><br /> сб-вс: <strong>с 9:00 до 18:00</strong><br /> <strong>(без перерывов на обед)</strong></div></div>
+                    </div>
+                    <!-- main partner END -->
+
+                    <!-- main partner -->
+                    <div class="main-partner">
+                        <div class="main-partner-photo"><img src="files/main-partner-2.jpg" alt="" /></div>
+                        <div class="main-partner-address">г. Владивосток, ул. Сахалинская, 4</div>
+                        <div class="main-partner-phone"><div class="main-partner-phone-inner">Магазин:<br /> <strong>8 (423) 202-52-52</strong><br /> Автосервис:<br /> <strong>8 (423) 2-950-650</strong></div></div>
+                        <div class="main-partner-time"><div class="main-partner-time-inner">пн-пт: <strong>с 9:00 до 19:00</strong><br /> сб-вс: <strong>с 9:00 до 18:00</strong><br /> <strong>(без перерывов на обед)</strong></div></div>
+                    </div>
+                    <!-- main partner END -->
+
+                    <!-- main partner -->
+                    <div class="main-partner">
+                        <div class="main-partner-photo"><img src="files/main-partner-3.jpg" alt="" /></div>
+                        <div class="main-partner-address">г. Владивосток, Народный проспект, 27 Б</div>
+                        <div class="main-partner-phone"><div class="main-partner-phone-inner">Автомойка:<br /> <strong>8 (423) 202-52-52</strong><br /> Автосервис:<br /> <strong>8 (423) 2-950-650</strong></div></div>
+                        <div class="main-partner-time"><div class="main-partner-time-inner"><strong>с 9-00 до 21-00 без выходных</strong></div></div>
+                    </div>
+                    <!-- main partner END -->
+
+                    <!-- main partner -->
+                    <div class="main-partner">
+                        <div class="main-partner-photo"><img src="files/main-partner-4.jpg" alt="" /></div>
+                        <div class="main-partner-address">г. Большой Камень ул. Академика Курчатова, 5</div>
+                        <div class="main-partner-phone"><div class="main-partner-phone-inner"><strong>+7 (423) 298-30-00</strong><br /> Автосервис:<br /> <strong>+7 (423) 299-30-00</strong><br /> Автомойка:<br /> <strong>+7 (423) 200-52-53</strong></div></div>
+                        <div class="main-partner-time"><div class="main-partner-time-inner"><strong>с 8:00 до 24:00<br /> без перерывов и выходных</strong></div></div>
+                    </div>
+                    <!-- main partner END -->
+
+                    <!-- main partner -->
+                    <div class="main-partner">
+                        <div class="main-partner-photo"><img src="files/main-partner-5.jpg" alt="" /></div>
+                        <div class="main-partner-address">г. Владивосток ул. Липовая, 7а, ул. Проходная 5-я, 15, стр. 8</div>
+                        <div class="main-partner-phone"><div class="main-partner-phone-inner"><strong>+7 (423) 298-30-00</strong><br /> Автосервис:<br /> <strong>+7 (423) 299-30-00</strong><br /> Автомойка:<br /> <strong>+7 (423) 200-52-53</strong></div></div>
+                        <div class="main-partner-time"><div class="main-partner-time-inner">Автосервис:<br /> <strong>09:00—20:00</strong><br /> Автомойка:<br /> <strong>09:00 до 22:00</strong></div></div>
+                    </div>
+                    <!-- main partner END -->
+
+                    <!-- main partner -->
+                    <div class="main-partner">
+                        <div class="main-partner-photo"><img src="files/main-partner-6.jpg" alt="" /></div>
+                        <div class="main-partner-address">г. Владивосток ул. Выселковая, 8в</div>
+                        <div class="main-partner-phone"><div class="main-partner-phone-inner"><strong>+7 (423) 246-45-92</strong></div></div>
+                        <div class="main-partner-time"><div class="main-partner-time-inner"><strong>с 8:00 до 24:00<br /> без перерывов и выходных</strong></div></div>
+                    </div>
+                    <!-- main partner END -->
+
+                    <!-- main partner -->
+                    <div class="main-partner">
+                        <div class="main-partner-photo"><img src="files/main-partner-7.jpg" alt="" /></div>
+                        <div class="main-partner-address">ул. Академика Кузнецова, 40б</div>
+                        <div class="main-partner-phone"><div class="main-partner-phone-inner"><strong>+7 (914) 790-07-99</strong><br /> Автосервис:<br /> <strong>+7 (423) 270-07-99</strong><br /> Автомойка:<br /> <strong>+7 (423) 244-50-55</strong></div></div>
+                        <div class="main-partner-time"><div class="main-partner-time-inner">Автосервис:<br /> <strong>09:00 до 19:00</strong><br /> Автомойка:<br /> <strong>08:00 до 21:00</strong></div></div>
+                    </div>
+                    <!-- main partner END -->
+
+                </div>
+                <!-- main partners END -->
+
+                <!-- side news -->
+                <div class="side-news on-tablet">
+                    <div class="side-news-title">Новости <div class="side-news-all"><a href="#">Все новости</a></div></div>
+                    <div class="side-news-list">
+                        <div class="side-news-item">
+                            <div class="side-news-item-title"><a href="#">Готовь сани летом, телегу - зимой</a></div>
+                            <div class="side-news-item-date">24 дек 2017</div>
+                        </div>
+                        <div class="side-news-item">
+                            <div class="side-news-item-title"><a href="#">Оплата картой ХАЛВА</a></div>
+                            <div class="side-news-item-date">24 дек 2017</div>
+                        </div>
+                        <div class="side-news-item">
+                            <div class="side-news-item-title"><a href="#">Большой ассортимент зимних шин</a></div>
+                            <div class="side-news-item-date">24 дек 2017</div>
+                        </div>
+                        <div class="side-news-item">
+                            <div class="side-news-item-title"><a href="#">Большой ассортимент зимних шин</a></div>
+                            <div class="side-news-item-date">24 дек 2017</div>
+                        </div>
+                    </div>
+                    <div class="side-news-all"><a href="#">Все новости</a></div>
+                </div>
+                <!-- side news END -->
+
+                <!-- slider 2 -->
+                <div class="slider-2">
+                    <div class="slider-2-list">
+                        <div class="slider-2-item" style="background-image:url(files/slider-2.jpg)">
+                            <div class="slider-2-item-inner">
+                                <div class="slider-2-item-content">
+                                    <div class="slider-2-item-title">Скидка <strong>20%</strong><br /> на правку дисков</div>
+                                    <div class="slider-2-item-text">Скидка предоставляется:<br /> — при покупке любой шины марки «Кама»<br /> — при покупке комплекта зимней резины</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-2-item" style="background-image:url(files/slider-2.jpg)">
+                            <div class="slider-2-item-inner">
+                                <div class="slider-2-item-content">
+                                    <div class="slider-2-item-title">Скидка <strong>20%</strong><br /> на правку дисков</div>
+                                    <div class="slider-2-item-text">Скидка предоставляется:<br /> — при покупке любой шины марки «Кама»<br /> — при покупке комплекта зимней резины</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-2-item" style="background-image:url(files/slider-2.jpg)">
+                            <div class="slider-2-item-inner">
+                                <div class="slider-2-item-content">
+                                    <div class="slider-2-item-title">Скидка <strong>20%</strong><br /> на правку дисков</div>
+                                    <div class="slider-2-item-text">Скидка предоставляется:<br /> — при покупке любой шины марки «Кама»<br /> — при покупке комплекта зимней резины</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-2-item" style="background-image:url(files/slider-2.jpg)">
+                            <div class="slider-2-item-inner">
+                                <div class="slider-2-item-content">
+                                    <div class="slider-2-item-title">Скидка <strong>20%</strong><br /> на правку дисков</div>
+                                    <div class="slider-2-item-text">Скидка предоставляется:<br /> — при покупке любой шины марки «Кама»<br /> — при покупке комплекта зимней резины</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-2-item" style="background-image:url(files/slider-2.jpg)">
+                            <div class="slider-2-item-inner">
+                                <div class="slider-2-item-content">
+                                    <div class="slider-2-item-title">Скидка <strong>20%</strong><br /> на правку дисков</div>
+                                    <div class="slider-2-item-text">Скидка предоставляется:<br /> — при покупке любой шины марки «Кама»<br /> — при покупке комплекта зимней резины</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider 2 END -->
+
+                <div class="main-bottom">
+                    <div class="main-bottom-text">Более</div>
+                    <div class="main-bottom-img"><img src="images/main-bottom.jpg" alt="" /></div>
+                    <div class="main-bottom-text">наименовании товаров...</div>
+                </div>
+
+            </div>
+            <!-- container END -->
+
+            <footer>
+                <div class="container">
+
+                    <!-- footer menu -->
+                    <div class="footer-menu">
+                        <div class="footer-menu-col">
+                            <div class="footer-menu-subcol">
+                                <div class="footer-menu-title"><a href="#">Шины</a></div>
+                                <ul>
+                                    <li><a href="#">Зимние</a></li>
+                                    <li><a href="#">Летние</a></li>
+                                    <li><a href="#">Шипованные</a></li>
+                                    <li><a href="#">Грязевые АТ</a></li>
+                                    <li><a href="#">Грязевые МТ</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-subcol">
+                                <div class="footer-menu-title"><a href="#">Диски</a></div>
+                                <ul>
+                                    <li><a href="#">Литые</a></li>
+                                    <li><a href="#">Кованные</a></li>
+                                    <li><a href="#">Железные</a></li>
+                                    <li><a href="#">BEAD LOCK (Off Road 4X4)</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-subcol">
+                                <div class="footer-menu-title"><a href="#">Мотошины</a></div>
+                                <ul>
+                                    <li><a href="#">Дорожные и спортивные</a></li>
+                                    <li><a href="#">Внедорожные (off road)</a></li>
+                                    <li><a href="#">Скутера</a></li>
+                                    <li><a href="#">ATV</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-subcol">
+                                <div class="footer-menu-title"><a href="#">Автосервис</a></div>
+                                <ul>
+                                    <li><a href="#">Регулировка сход развал</a></li>
+                                    <li><a href="#">Замена масел и тех. жидкостей</a></li>
+                                    <li><a href="#">Диагностика авто</a></li>
+                                    <li><a href="#">Ремонт подвески</a></li>
+                                    <li><a href="#">Проточка тормозных дисков</a></li>
+                                    <li><a href="#">Замена узлов и агрегатов</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu-col">
+                            <div class="footer-menu-title"><a href="#">Товары для отдыха</a></div>
+                            <div class="footer-menu-subcol">
+                                <ul>
+                                    <li><a href="#">MASTER – серия</a></li>
+                                    <li><a href="#">Освещение, фонари</a></li>
+                                    <li><a href="#">RV-BOX</a></li>
+                                    <li><a href="#">ATAKC-BOX</a></li>
+                                    <li><a href="#">Печи, обогреватели, мангалы</a></li>
+                                    <li><a href="#">Палатки и тенты</a></li>
+                                    <li><a href="#">Спальники и матрасы</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-subcol">
+                                <ul>
+                                    <li><a href="#">Мебель</a></li>
+                                    <li><a href="#">Отдых на открытом воздухе</a></li>
+                                    <li><a href="#">Изотермика</a></li>
+                                    <li><a href="#">Шланги</a></li>
+                                    <li><a href="#">Водный отдых</a></li>
+                                    <li><a href="#">Одежда Милитари</a></li>
+                                    <li><a href="#">Следопыт – серия</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-title"><a href="#">Автотовары</a></div>
+                            <div class="footer-menu-subcol">
+                                <ul>
+                                    <li><a href="#">Аксессуары</a></li>
+                                    <li><a href="#">Автопринадлежности</a></li>
+                                    <li><a href="#">Автоэлектроника</a></li>
+                                    <li><a href="#">Аккумуляторы и сопутствующее</a></li>
+                                    <li><a href="#">Масла и смазки</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-subcol">
+                                <ul>
+                                    <li><a href="#">Расходные жидкости</a></li>
+                                    <li><a href="#">Автохимия</a></li>
+                                    <li><a href="#">Автокосметика</a></li>
+                                    <li><a href="#">Автозапчасти</a></li>
+                                    <li><a href="#">Всё для ремонта</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer menu END -->
+
+                    <div class="footer-sections">
+                        <ul>
+                            <li><a href="#">Шиномонтаж</a></li>
+                            <li><a href="#">Хранение шин</a></li>
+                            <li><a href="#">Ремонт дисков</a></li>
+                            <li><a href="#">Точки продаж</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Информация</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Покупателям</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-phone">
+                            <div class="footer-phone-number"><a href="tel:+74232025252">+7 (423) 202-52-52</a></div>
+                            <div class="footer-phone-text">для звонков во Владивостоке</div>
+                        </div>
+                        <div class="footer-phone">
+                            <div class="footer-phone-number"><a href="tel:+78005004280">8 800 500-42-80</a></div>
+                            <div class="footer-phone-text">для звонков по РФ</div>
+                        </div>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-whatsapp"></a>
+                            <a href="#" class="footer-social-telegram"></a>
+                            <a href="#" class="footer-social-vk"></a>
+                            <a href="#" class="footer-social-fb"></a>
+                            <a href="#" class="footer-social-ig"></a>
+                            <a href="#" class="footer-social-viber"></a>
+                        </div>
+                        <div class="footer-copyrights">
+                            <p>© «1000 Размеров» 1998-2017. <a href="#">Политика конфеденциальности</a></p>
+                            <p>Разработка сайта — студия «<a href="http://netsmart.ru" target="_blank">Нэтсмарт</a>»</p>
+                        </div>
+                        <div class="footer-payments">
+                            <img src="images/payments-visa.png" alt="" />
+                            <img src="images/payments-mastercard.png" alt="" />
+                            <img src="images/payments-mir.png" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+        <!-- wrapper END -->
+
+    </body>
+</html>
