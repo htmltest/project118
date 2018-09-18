@@ -441,6 +441,18 @@ $(document).ready(function() {
         ]
     });
 
+    $('.main-filters-mobile-menu ul li a').click(function(e) {
+        var curLi = $(this).parent();
+        if (!curLi.hasClass('active')) {
+            $('.main-filters-mobile-menu ul li.active').removeClass('active');
+            curLi.addClass('active');
+            var curIndex = $('.main-filters-mobile-menu ul li').index(curLi);
+            $('.main-filter').removeClass('active');
+            $('.main-filter').eq(curIndex).addClass('active');
+        }
+        e.preventDefault();
+    });
+
 });
 
 $(window).on('resize', function() {

@@ -1092,6 +1092,9 @@ header {height:379px; position:relative; z-index:20}
 .main-filter-submit button:after {content:""; display:inline-block; vertical-align:middle; width:13px; height:9px; background:url(../images/main-filter-submit.png); margin:-4px 0 0 6px}
 .main-filter-submit button:hover {background-position:left -48px}
 
+.main-filters-mobile-title {display:none}
+.main-filters-mobile-menu {display:none}
+
 @media screen and (max-width:1179px) {
     .main-filters {float:none; width:auto}
     .main-filter-title {font-size:30px}
@@ -1104,9 +1107,22 @@ header {height:379px; position:relative; z-index:20}
 }
 
 @media screen and (max-width:767px) {
-    .main-filter {width:auto; padding:0; float:none}
+    .main-filters {position:relative}
+    .main-filter {width:100%; padding:0; float:none; position:absolute; left:-9999px; top:-9999px}
+    .main-filter.active {position:relative; left:auto; top:auto}
     .main-filter+.main-filter {padding:0}
-    .main-filter-inner {border-left:none; border-right:none; margin:0 -20px; padding-left:38px; padding-right:38px; border-bottom:none}
+    .main-filter-inner {margin:0 -20px; padding-left:20px; padding-right:20px; margin-bottom:30px; border-left:none; border-right:none}
+
+    .main-filters-mobile-title {display:block; font-size:30px; line-height:35px; margin:0 0 20px 0}
+    .main-filter-title {display:none}
+    .main-filters-mobile-menu {display:block; margin:0 -20px; position:relative; z-index:2}
+    .main-filters-mobile-menu ul {margin:0; padding:0; list-style:none}
+    .main-filters-mobile-menu ul::after {content:""; display:block; clear:both}
+    .main-filters-mobile-menu ul li {float:left; margin:0 0 0 0; padding:0}
+    .main-filters-mobile-menu ul li::before {display:none}
+    .main-filters-mobile-menu ul li a {display:block; border:2px solid #eaecf4; padding:10px 20px; text-decoration:none; background:#f0f0f0; border-bottom:none; border-left:none}
+    .main-filters-mobile-menu ul li.active a {background:none; position:relative}
+    .main-filters-mobile-menu ul li.active a::after {content:""; display:block; position:absolute; left:0; bottom:-2px; right:0; height:2px; background:#fff}
 }
 
 .main-top .side {float:left; width:280px}
